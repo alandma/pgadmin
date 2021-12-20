@@ -1,0 +1,10 @@
+version: "3.7"
+services: 
+    
+    pgadmin4:
+      image: dpage/pgadmin4:5.0
+      environment: 
+        - PGADMIN_DEFAULT_EMAIL=admin@admin.com.br
+        - PGADMIN_DEFAULT_PASSWORD="Admin@1"
+      ports: 
+        - "5050:80"
